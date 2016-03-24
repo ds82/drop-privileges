@@ -1,14 +1,14 @@
 {
   "name": "drop-privileges",
-  "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require test/_setup.js test/*spec.js"
+    "test": "mocha --require test/_setup.js test/*spec.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ds82/drop-privileges.git"
+    "url": "https://github.com/ds82/drop-privileges.git"
   },
   "keywords": [
     "node",
@@ -26,6 +26,7 @@
     "chai": "3.5.0",
     "mocha": "2.4.5",
     "sinon": "1.17.3",
-    "sinon-chai": "2.8.0"
+    "sinon-chai": "2.8.0",
+    "semantic-release": "^4.3.5"
   }
 }
