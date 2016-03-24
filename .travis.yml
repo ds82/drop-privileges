@@ -1,0 +1,19 @@
+sudo: false
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
+node_js:
+  - '0.10'
+  - '0.12'
+  - '4.2'
+before_install:
+  - npm i -g npm@^2.0.0
+before_script:
+  - npm install
+script:
+  - npm run test
+after_success:
+branches:
+
