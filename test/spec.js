@@ -30,4 +30,5 @@ describe('drop-privileges', function() {
   it('should catch if setuid throws an error');
   it('should catch if setgid throws an error');
 
+  it('should call setgid before uid');
 });
